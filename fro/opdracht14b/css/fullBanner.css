@@ -1,0 +1,179 @@
+.fb{
+  height: 728px;
+  width: 90px;
+  border: 1px solid grey;
+  box-sizing: border-box;
+  font-family: monospace;
+  font-size: 2em;
+  overflow: hidden;
+  background-image: url('../afb/schermCode.jpg');
+  color: #fff;
+  background-size: cover;
+  animation: achterAnimatie 8s alternate infinite;
+  cursor: pointer;
+  background: pink;
+}
+
+@keyframes achterAnimatie {
+  0%, 10% { background-position: left }
+  90%, 100% { background-position: right }
+}
+
+.fb__laag1{
+  display: grid;
+  grid-template-rows: repeat(4, auto) 50px;
+  /* margin-top: -728px; */
+  text-align: center;
+  transition: margin-top .90s cubic-bezier(.23,.19,.76,1.52);
+
+}
+
+.fb_laag1 > div {
+  height: 60px;
+  line-height: 58px;
+}
+
+.fb__Pam{
+  margin-top: 120px;
+}
+
+.fb__kan{
+  margin-top: 120px;
+}
+
+.fb__alles{
+  margin-top: 120px;
+}
+
+
+.fb__Pam, .fb__kan, .fb__alles, .fb__ballon, .fb__html, .fb__css, .fb__js{
+  transition: transform .5s cubic-bezier(.23,.19,.76,1.52);
+}
+.fb__Pam.fb--uit{
+  transform: translateY(-180px);
+}
+.fb__kan.fb--uit{
+  transform:translateY(480px);
+}
+.fb__alles.fb--uit{
+  transform: translateY(-480px);
+}
+
+.fb__waggel{
+  display: inline-block;
+
+}
+
+.fb__waggel.fb--waggel{
+  animation: waggelen 1s forwards;
+}
+
+
+
+@keyframes waggelen {
+  0%, 70%, 100% {transform: rotate(0)}
+  10% {transform: rotate(-23deg)}
+  20% {transform: rotate(20deg)}
+  30% {transform: rotate(-12deg)}
+  40% {transform: rotate(10deg)}
+  50% {transform: rotate(-6deg)}
+  60% {transform: rotate(3deg)}
+
+}
+
+.fb__nl{
+  margin-top: 120px;
+  color: #333;
+  z-index: 2;
+}
+
+.fb__laag1 .fb__ballon{
+  width: 2.5em;
+  height: 2.5em;
+  background-color: white;
+  border-radius: 3em;
+  align-self: center;
+  align-items: center;
+  transform: translateY(-1.5em) translateX(0);
+  overflow: hidden;
+}
+
+.fb__laag1 .fb__ballon.fb--uit{
+  transform: translateY(160px);
+}
+
+.fb:hover .fb__ballon{
+  background: skyblue;
+}
+
+.fb__laag1.fb--uit{
+  margin-top: -728px;
+}
+
+.fb__laag2{
+  display: grid;
+  grid-template-rows: 1fr 50px 50px 60px;
+  background: rgba(255, 255, 255, 0.5);
+  line-height: 60px;
+  /*margin-top: 450px;*/
+  height: 728px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.fb__tut{
+  padding-left: .5em;
+}
+
+.fb__tut.fb--uit span{
+  display: inline-block;
+animation: blob .7s forwards;
+  opacity: 0;
+}
+
+@keyframes blob {
+  0% {opacity: 0; transform: scale(9)}
+  90% {opacity: 1; transform: scale(.9)}
+  100% {opacity: 1; transform: scale(1)}
+}
+
+.fb__tut.fb--uit .l2 { animation-delay: .1s;}
+.fb__tut.fb--uit .l3 { animation-delay: .2s;}
+.fb__tut.fb--uit .l4 { animation-delay: .3s;}
+.fb__tut.fb--uit .l5 { animation-delay: .4s;}
+.fb__tut.fb--uit .l6 { animation-delay: .5s;}
+.fb__tut.fb--uit .l7 {  animation-delay: .6s;}
+.fb__tut.fb--uit .l8 { animation-delay: .7s;}
+.fb__tut.fb--uit .l9 { animation-delay: .8s;}
+
+.fb__html, .fb__css{
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fb__html.fb--uit{
+  transform: translatex(-100px);
+}
+
+.fb__css.fb--uit{
+  transform: translateY(120px);
+}
+
+.fb__js{
+  height: 58px;
+  margin-top: 2px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fb__js.fb--uit{
+  transform: translateX(400px);
+}
+
+.fb__ballon{
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,62 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  background-image: url("img/achtergrond.jpg");
+  background-size: cover;
+
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+img{
+  margin-top: 60px;
+  height: 80px;
+}
+#myAnswer{
+  font-size: 30px;
+}
+#wrapper {
+  text-align: center;
+  border-style: solid;
+  border-width: 5px;
+  margin: 0 auto;
+  width: 750px;
+  height: 600px;
+  background-color: rgba(255,255,255,0.5);
+
+}
+#feedback {
+  margin-top: 30px;
+  width: 210px;
+  height: 210px;
+}
+
+#myAssignment{
+  font-size: 80px;
+  background-position: center;
+  background-size: cover;
+}
+
+#head{
+  font-size: 50px;
+  font-family: fantasy;
+  font-weight: bolder;
+}
+
+#opgave{
+  margin: 50px;
+  font-family: fantasy;
+}
+.punt{
+  font-weight: bolder;
+}
+
+.punt1{
+  font-weight: 200;
+}
+#punten{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 10px;
+}
